@@ -47,16 +47,24 @@ header {
 }
 
 header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1.875rem;
 }
 
 header .logo {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -95,9 +103,14 @@ header .mobile {
   }
 
   header .mobile ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
 
@@ -116,9 +129,15 @@ header .mobile {
 /* Sign Up Section */
 
 #sign-up-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: 43.5rem;
   background-image: url("../images/banner-landingpage.jpg");
   background-repeat: no-repeat;
@@ -173,8 +192,12 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
   #sign-up-section {
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 28rem;
   }
 
@@ -221,14 +244,20 @@ header .mobile {
 /* Features Section */
 
 #features-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
 }
 
 .feature {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
@@ -272,7 +301,10 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
   #features-section {
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
     padding: 0;
   }
 
@@ -310,6 +342,8 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -391,12 +425,16 @@ footer {
 
 footer .content {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: .75rem;
 }
 
 footer .copyright {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media only screen and (min-width: 760px) {
